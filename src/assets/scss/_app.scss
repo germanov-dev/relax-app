@@ -4,8 +4,7 @@
 
 .app {
 	display: flex;
-	height: 70%;
-	padding-top: 110px;
+	height: calc(100% - 105px);
 
 	.app {
 		&__time,
@@ -19,18 +18,27 @@
 		&__sound {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
 			align-items: center;
+
+			.btn + .btn {
+				margin-top: 30px;
+			}
 		}
 
 		&__player {
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
 			position: relative;
+
+			img {
+				width: 400px;
+				height: 400px;
+			}
 
 			.track-outline {
 				position: absolute;
-				top: 50%;
+				top: 200px;
 				left: 50%;
 				transform: translate(-50%, -50%) rotate(-90deg);
 				pointer-events: none;
@@ -43,12 +51,65 @@
 
 		&__countdown {
 			position: absolute;
-			bottom: -150px;
+			bottom: 20px;
 			left: 50%;
 			transform: translateX(-50%);
 			color: #e0e0d1;
 			font-size: 150px;
 			text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	@media (max-width: 1023px) {
+		.app {
+			&__player {
+				.track-outline {
+					width: 300px;
+					height: 300px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		display: block;
+
+		.app {
+			&__time,
+			&__sound {
+				flex-direction: row;
+				height: auto;
+				justify-content: center;
+
+				.btn + .btn {
+					margin-top: 0;
+					margin-left: 10px;
+				}
+			}
+
+			&__player {
+				height: auto;
+				margin: 40px 0;
+
+				img {
+					width: 100px;
+					height: 100px;
+				}
+
+				.track-outline {
+					top: 50px;
+					width: 130px;
+					height: 130px;
+				}
+			}
+
+			&__countdown {
+				position: fixed;
+				bottom: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 80px;
+			}
 		}
 	}
 }

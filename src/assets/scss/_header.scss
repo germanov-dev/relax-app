@@ -3,6 +3,10 @@
 \* ------------------------------------------------------------ */
 
 .header {
-	text-align: center;
-	padding: 20px;
+	padding: 20px 50px;
+
+	@media (max-width: 767px) {
+		padding: 15px;
+		text-align: center;
+	}
 }

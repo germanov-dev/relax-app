@@ -9,10 +9,7 @@
 	overflow: hidden;
 
 	.header {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
+		position: relative;
 		z-index: 5;
 	}
 
@@ -21,11 +18,18 @@
 		top: 0;
 		left: 0;
 		width: 100%;
+		min-width: 1920px;
 		z-index: 1;
 	}
 
 	.app {
 		position: relative;
 		z-index: 5;
+	}
+
+	@media (max-width: 1023px) {
+		.video {
+			min-width: 2300px;
+		}
 	}
 }
