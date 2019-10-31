@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<include src="head.html"></include>
+<body>
+	<div class="wrapper">
+		<include src="header.html"></include>
+
+		<div class="video">
+			<video loop>
+				<source src="./assets/videos/forest.mp4" type="video/mp4"></source>
+			</video>
+		</div><!-- /.video -->
+
+		<div class="app">
+			<div class="app__time">
+				<button class="btn" data-time="120"><span>2</span> Minutes</button>
+
+				<button class="btn" data-time="300"><span>5</span> Minutes</button>
+
+				<button class="btn" data-time="600"><span>10</span> Minutes</button>
+			</div><!-- /.app__time -->
+
+			<div class="app__player">
+				<audio>
+					<source src="./assets/sounds/rainforest.mp3" />
+				</audio>
+
+				<img src="./assets/images/play.svg" alt="Play" class="play">
+
+
+				<svg class="track-outline" width="500px" height="500px" viewBox="0 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <circle id="Oval" stroke="#F5CF87" stroke-width="10" fill-rule="nonzero" cx="205" cy="205" r="200"></circle>
+				    </g>
+				</svg>
+
+				<strong class="app__countdown">0:00</strong>
+			</div><!-- /.app__player -->
+
+			<div class="app__sound">
+				<button class="btn" data-sound="./assets/sounds/rainforest.mp3" data-video="./assets/videos/forest.mp4">
+					<img src="./assets/images/trees.svg" alt="">
+				</button>
+
+				<button class="btn" data-sound="./assets/sounds/waves.mp3" data-video="./assets/videos/wave.mp4">
+					<img src="./assets/images/waves.svg" alt="">
+				</button>
+
+				<button class="btn" data-sound="./assets/sounds/thunderstorm.mp3" data-video="./assets/videos/rain.mp4">
+					<img src="./assets/images/rain.svg" alt="">
+				</button>
+			</div><!-- /.app__sounds -->
+		</div><!-- /.app -->
+
+		<include src="footer.html"></include>
+	</div><!-- /.wrapper -->
+
+	<include src="scripts.html"></include>
+</body>
+</html>

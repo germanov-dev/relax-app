@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	width: 150px;
+	height: 150px;
+	background: #c75c5c;
+	border-radius: 50%;
+	border: none;
+	color: #e0e0d1;
+	font-size: 27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 8px solid #f5cf87;
+	box-shadow: inset 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+	span {
+		display: block;
+	}
+
+	img {
+		width: 50%;
+		height: auto;
+		pointer-events: none;
+	}
+}

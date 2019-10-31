@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper {
+	position: relative;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+	}
+
+	.video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.app {
+		position: relative;
+		z-index: 5;
+	}
+}
