@@ -32,8 +32,9 @@
 			position: relative;
 
 			img {
+				max-width: 100%;
 				width: 400px;
-				height: 400px;
+				height: auto;
 			}
 
 			.track-outline {
@@ -66,6 +67,7 @@
 				.track-outline {
 					width: 300px;
 					height: 300px;
+					top: 130px;
 				}
 			}
 		}

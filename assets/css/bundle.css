@@ -367,8 +367,9 @@ a:hover, a[href^="tel"] {
             align-items: center;
     position: relative; }
 .app .app__player img {
+      max-width: 100%;
       width: 400px;
-      height: 400px; }
+      height: auto; }
 .app .app__player .track-outline {
       position: absolute;
       top: 200px;
@@ -394,7 +395,8 @@ a:hover, a[href^="tel"] {
 @media (max-width: 1023px) {
     .app .app__player .track-outline {
       width: 300px;
-      height: 300px; } }
+      height: 300px;
+      top: 130px; } }
 @media (max-width: 767px) {
     .app {
       display: block; }
